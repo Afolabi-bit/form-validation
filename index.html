@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="main-container flex">
+    <section class="text flex">
+      <h1>Learn to code by watching others</h1>
+      <p>
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+      but understanding how developers think is invaluable.
+      </p>
+    </section>
+    <section class="form-wrapper">
+      <button class="btn">
+Try it free 7 days then $20/mo. thereafter
+      </button>
+      <form action="#" id="form" class="form flex">
+        <label for="first-name">
+          <input type="text" name="firstname" id="firstname" placeholder="First name">
+          <i class="fas fa-exclamation-circle"></i>
+          <p class="error-msg" id="Firsterror"></p>
+        </label>
+        <label for="last-name">
+          <input type="text" name="lastname" id="lastname" placeholder="Last name">
+          <i class="fas fa-exclamation-circle"></i>
+          <p class="error-msg" id="Lasterror"></p>
+        </label>
+        <label for="email">
+          <input type="text" name="email" id="email"  placeholder="Email address">
+          <i class="fas fa-exclamation-circle"></i>
+          <p class="error-msg" id="Emailerror"></p>
+        </label>
+        <label for="password">
+          <input type="password" name="password" id="password" placeholder="Password">
+          <i class="fas fa-exclamation-circle"></i>
+          <p class="error-msg" id="Passworderror"></p>
+        </label>
+        <input class="btn" type="submit" value="Claim your free trial ">
+        <p>By clicking the button, you are agreeing to our
+           <a href="#">Terms and Services</a></p>
+      </form>
+      <footer>
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="https://github.com/josephafolabi">Afolabi Joseph</a>
+        </p>
+      </footer>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
